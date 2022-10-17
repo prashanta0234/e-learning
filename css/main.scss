@@ -6,6 +6,7 @@
   box-sizing: border-box;
   background-color: $bg-color;
 }
+
 .containera {
   @include container;
 }
@@ -39,5 +40,39 @@ nav {
 }
 
 .icon {
-  @include iconClr;
+  @include iconClr($secondary-color);
+}
+.icon1 {
+  @include iconClr($primary-color);
+}
+
+.never_stop_learning {
+  width: 15rem;
+  height: 3.125rem;
+  border-radius: 10px;
+  background-color: white;
+  color: $secondary-color;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $f2;
+}
+
+.hero-left {
+  margin-top: 7.875rem;
+}
+.hero-header {
+  @include header-font($f3, $p-f-c, 700, 75px);
+}
+.hero-text {
+  @include header-font($f1, $s-f-c, 400, 30px);
+}
+
+.hero-input {
+  form {
+    input {
+      @include text-input(100%, 3.75rem, 10px, none, white);
+    }
+  }
 }

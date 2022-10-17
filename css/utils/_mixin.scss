@@ -27,6 +27,21 @@
   }
 }
 
-@mixin iconClr {
-  color: $secondary-color;
+@mixin iconClr($clr) {
+  color: #{$clr};
+}
+
+@mixin header-font($f-size, $clr, $fw, $lh) {
+  font-size: #{$f-size};
+  color: #{$clr};
+  font-weight: #{$fw};
+  line-height: #{$lh};
+}
+
+@mixin text-input($w, $h, $br, $b, $bg) {
+  width: #{$w};
+  height: #{$h};
+  border-radius: #{$br};
+  border: #{$b};
+  background-color: #{$lh};
 }
