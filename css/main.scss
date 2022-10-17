@@ -70,9 +70,56 @@ nav {
 }
 
 .hero-input {
+  position: relative;
   form {
     input {
       @include text-input(100%, 3.75rem, 10px, none, white);
     }
+
+    .drop {
+      position: relative;
+      bottom: 55px;
+      background-color: transparent;
+      display: grid;
+      grid-template-columns: 2fr 1fr 4fr 2fr;
+
+      button {
+        color: $t-f-c;
+        @include header-font($f1, $t-f-c, 500, 16px);
+        svg {
+          background-color: transparent;
+        }
+      }
+      .line {
+        width: 1px;
+        height: 90%;
+        background-color: #dadada;
+        margin: 0 26px;
+      }
+      input {
+        height: auto;
+
+        border-radius: 5px;
+      }
+      input:focus {
+        outline: none !important;
+        border: none;
+      }
+      .search {
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        background-color: $primary-color;
+        color: white;
+        margin-right: 5px;
+        svg {
+          background-color: transparent;
+        }
+      }
+    }
   }
+}
+
+.dropdown-toggle::after {
+  display: none;
 }
