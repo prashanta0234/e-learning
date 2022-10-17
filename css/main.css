@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #e5e5e5;
+}
+
+.containera {
+  margin: 0 5rem;
+}
+
+a img {
+  width: 114px;
+}
+
+.navMain {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+  margin: 0 0 0 2.5rem;
+}
+.navMain .menus ul li {
+  margin: 0 1rem;
+}
+.navMain .menus ul li a {
+  font-size: 1rem;
+  color: #0a033c;
+}
+
+nav {
+  width: 100%;
+}
+
+.CA ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+.CA ul li a {
+  font-size: 1rem;
+  color: #0a033c;
+  text-decoration: none;
+}
+.CA ul li a span {
+  margin-left: 1rem;
+}
+
+.icon {
+  color: #ff6652;
+}/*# sourceMappingURL=main.css.map */

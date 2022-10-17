@@ -1,0 +1,32 @@
+// container
+@mixin container {
+  margin: 0 5rem;
+}
+
+@mixin a {
+  font-size: $f1;
+  color: $p-f-c;
+}
+
+@mixin navMain {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+
+  margin: 0 0 0 2.5rem;
+
+  .menus {
+    ul {
+      li {
+        margin: 0 1rem;
+        a {
+          @include a;
+        }
+      }
+    }
+  }
+}
+
+@mixin iconClr {
+  color: $secondary-color;
+}
