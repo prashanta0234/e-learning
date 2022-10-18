@@ -113,11 +113,8 @@ nav {
         border: none;
       }
       .search {
-        height: 50px;
-        border-radius: 10px;
-        border: none;
-        background-color: $primary-color;
-        color: white;
+        @include button(50px, 10px, none, $primary-color, white);
+
         margin-right: 5px;
         svg {
           background-color: transparent;
@@ -161,11 +158,69 @@ nav {
 // video and audio section
 .video-audio {
   margin-top: 150px;
+  position: relative;
+
   .va-head {
     text-align: center;
     padding: 0 324px;
     h6 {
       @include header-font(45px, $p-f-c, 700, 55px);
+    }
+  }
+  p {
+    @include header-font($f1, $s-f-c, 400, 30px);
+    padding: 0 182px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .btnn {
+    display: flex;
+    button {
+      @include button(60px, 10px, none, $primary-color, white);
+      width: 162px;
+      margin: 40px auto;
+    }
+  }
+
+  .video {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    img {
+      z-index: 999;
+      border: 30px solid white;
+      border-radius: 20px;
+    }
+  }
+  .pattern {
+    position: absolute;
+    background-color: transparent;
+    top: 305px;
+    left: 1012px;
+    z-index: 1;
+
+    img {
+      background-color: transparent;
+    }
+  }
+  .classes_type {
+    width: 1060px;
+    display: grid;
+    margin: 40px auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    div {
+      @include classTypes;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      img {
+        background-color: transparent;
+      }
+      span {
+        @include header-font(25px, $p-f-c, 600, 25px);
+        background-color: transparent;
+      }
     }
   }
 }

@@ -60,3 +60,17 @@
     width: 100%;
   }
 }
+
+@mixin button($h, $br, $b, $bg, $cl) {
+  height: $h;
+  border-radius: $br;
+  border: $b;
+  background-color: $bg;
+  color: $cl;
+}
+
+@mixin classTypes {
+  height: 100px;
+  border-radius: 10px;
+  background-color: white;
+}

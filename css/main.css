@@ -211,6 +211,7 @@ nav {
 
 .video-audio {
   margin-top: 150px;
+  position: relative;
 }
 .video-audio .va-head {
   text-align: center;
@@ -221,4 +222,70 @@ nav {
   color: #0a033c;
   font-weight: 700;
   line-height: 55px;
+}
+.video-audio p {
+  font-size: 16px;
+  color: #5d5a6f;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 0 182px;
+  text-align: center;
+  margin: 20px 0;
+}
+.video-audio .btnn {
+  display: flex;
+}
+.video-audio .btnn button {
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  background-color: #9c4df4;
+  color: white;
+  width: 162px;
+  margin: 40px auto;
+}
+.video-audio .video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.video-audio .video img {
+  z-index: 999;
+  border: 30px solid white;
+  border-radius: 20px;
+}
+.video-audio .pattern {
+  position: absolute;
+  background-color: transparent;
+  top: 305px;
+  left: 1012px;
+  z-index: 1;
+}
+.video-audio .pattern img {
+  background-color: transparent;
+}
+.video-audio .classes_type {
+  width: 1060px;
+  display: grid;
+  margin: 40px auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+.video-audio .classes_type div {
+  height: 100px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.video-audio .classes_type div img {
+  background-color: transparent;
+}
+.video-audio .classes_type div span {
+  font-size: 25px;
+  color: #0a033c;
+  font-weight: 600;
+  line-height: 25px;
+  background-color: transparent;
 }/*# sourceMappingURL=main.css.map */
