@@ -1,5 +1,6 @@
 @import "./utils/index";
 
+// initial
 * {
   padding: 0;
   margin: 0;
@@ -16,6 +17,7 @@ a {
   }
 }
 
+// nav section
 .navMain {
   @include navMain;
 }
@@ -45,6 +47,8 @@ nav {
 .icon1 {
   @include iconClr($primary-color);
 }
+
+// hero section
 
 .never_stop_learning {
   width: 15rem;
@@ -136,7 +140,7 @@ nav {
     img {
       margin-top: 100px;
       margin-left: 155px;
-      width: 100%;
+      width: 518px;
       height: 41.813rem;
     }
   }
@@ -150,6 +154,18 @@ nav {
     @include vactor(134px, 631px);
   }
   .vector4 {
-    @include vactor(457px, 586px);
+    @include vactor(457px, 566px);
+  }
+}
+
+// video and audio section
+.video-audio {
+  margin-top: 150px;
+  .va-head {
+    text-align: center;
+    padding: 0 324px;
+    h6 {
+      @include header-font(45px, $p-f-c, 700, 55px);
+    }
   }
 }

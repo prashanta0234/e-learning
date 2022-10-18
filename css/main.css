@@ -23,7 +23,7 @@ a img {
   margin: 0 1rem;
 }
 .navMain .menus ul li a {
-  font-size: 1rem;
+  font-size: 16px;
   color: #0a033c;
 }
 
@@ -36,7 +36,7 @@ nav {
   margin: 0 1rem;
 }
 .CA ul li a {
-  font-size: 1rem;
+  font-size: 16px;
   color: #0a033c;
   text-decoration: none;
 }
@@ -62,7 +62,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 .hero-main {
@@ -74,14 +74,14 @@ nav {
 }
 
 .hero-header {
-  font-size: 4.063rem;
+  font-size: 65px;
   color: #0a033c;
   font-weight: 700;
   line-height: 75px;
 }
 
 .hero-text {
-  font-size: 1rem;
+  font-size: 16px;
   color: #5d5a6f;
   font-weight: 400;
   line-height: 30px;
@@ -103,10 +103,10 @@ nav {
 }
 .hero-input form .drop button {
   color: rgba(93, 90, 111, 0.6);
-  font-size: 1rem;
+  font-size: 16px;
   color: rgba(93, 90, 111, 0.6);
   font-weight: 500;
-  line-height: 1rem;
+  line-height: 16px;
 }
 .hero-input form .drop button svg {
   background-color: transparent;
@@ -149,7 +149,7 @@ nav {
 .right-colam .hero-right img {
   margin-top: 100px;
   margin-left: 155px;
-  width: 100%;
+  width: 518px;
   height: 41.813rem;
 }
 .right-colam .vector1 {
@@ -197,7 +197,7 @@ nav {
 .right-colam .vector4 {
   position: absolute;
   top: 457px;
-  right: 586px;
+  right: 566px;
   background-color: white;
   border-radius: 10px;
   border: 15px solid white;
@@ -207,4 +207,18 @@ nav {
 .right-colam .vector4 img {
   background-color: transparent;
   width: 100%;
+}
+
+.video-audio {
+  margin-top: 150px;
+}
+.video-audio .va-head {
+  text-align: center;
+  padding: 0 324px;
+}
+.video-audio .va-head h6 {
+  font-size: 45px;
+  color: #0a033c;
+  font-weight: 700;
+  line-height: 55px;
 }/*# sourceMappingURL=main.css.map */
