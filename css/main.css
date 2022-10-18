@@ -65,6 +65,10 @@ nav {
   font-size: 1.25rem;
 }
 
+.hero-main {
+  display: flex;
+}
+
 .hero-left {
   margin-top: 7.875rem;
 }
@@ -83,9 +87,6 @@ nav {
   line-height: 30px;
 }
 
-.hero-input {
-  position: relative;
-}
 .hero-input form input {
   width: 100%;
   height: 3.75rem;
@@ -105,7 +106,7 @@ nav {
   font-size: 1rem;
   color: rgba(93, 90, 111, 0.6);
   font-weight: 500;
-  line-height: 16px;
+  line-height: 1rem;
 }
 .hero-input form .drop button svg {
   background-color: transparent;
@@ -138,4 +139,72 @@ nav {
 
 .dropdown-toggle::after {
   display: none;
+}
+
+.right-colam .hero-right {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.right-colam .hero-right img {
+  margin-top: 100px;
+  margin-left: 155px;
+  width: 100%;
+  height: 41.813rem;
+}
+.right-colam .vector1 {
+  position: absolute;
+  top: 668px;
+  right: 43px;
+  background-color: white;
+  border-radius: 10px;
+  border: 15px solid white;
+  width: 60px;
+  box-shadow: 0px 25px 70px rgba(10, 3, 60, 0.15);
+}
+.right-colam .vector1 img {
+  background-color: transparent;
+  width: 100%;
+}
+.right-colam .vector2 {
+  position: absolute;
+  top: 193px;
+  right: 133px;
+  background-color: white;
+  border-radius: 10px;
+  border: 15px solid white;
+  width: 60px;
+  box-shadow: 0px 25px 70px rgba(10, 3, 60, 0.15);
+}
+.right-colam .vector2 img {
+  background-color: transparent;
+  width: 100%;
+}
+.right-colam .vector3 {
+  position: absolute;
+  top: 134px;
+  right: 631px;
+  background-color: white;
+  border-radius: 10px;
+  border: 15px solid white;
+  width: 60px;
+  box-shadow: 0px 25px 70px rgba(10, 3, 60, 0.15);
+}
+.right-colam .vector3 img {
+  background-color: transparent;
+  width: 100%;
+}
+.right-colam .vector4 {
+  position: absolute;
+  top: 457px;
+  right: 586px;
+  background-color: white;
+  border-radius: 10px;
+  border: 15px solid white;
+  width: 60px;
+  box-shadow: 0px 25px 70px rgba(10, 3, 60, 0.15);
+}
+.right-colam .vector4 img {
+  background-color: transparent;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

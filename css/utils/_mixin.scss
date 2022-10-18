@@ -45,3 +45,18 @@
   border: #{$b};
   background-color: #{$bg};
 }
+
+@mixin vactor($top, $right) {
+  position: absolute;
+  top: #{$top};
+  right: #{$right};
+  background-color: white;
+  border-radius: 10px;
+  border: 15px solid white;
+  width: 60px;
+  box-shadow: 0px 25px 70px rgba(10, 3, 60, 0.15);
+  img {
+    background-color: transparent;
+    width: 100%;
+  }
+}
