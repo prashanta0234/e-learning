@@ -162,16 +162,16 @@ nav {
 
   .va-head {
     text-align: center;
-    padding: 0 324px;
+    margin: 0 324px;
     h6 {
       @include header-font(45px, $p-f-c, 700, 55px);
     }
   }
   p {
     @include header-font($f1, $s-f-c, 400, 30px);
-    padding: 0 182px;
+
     text-align: center;
-    margin: 20px 0;
+    margin: 20px 324px;
   }
   .btnn {
     display: flex;
@@ -186,17 +186,19 @@ nav {
     position: relative;
     display: flex;
     justify-content: center;
+    margin: 0 65px;
     img {
       z-index: 999;
       border: 30px solid white;
       border-radius: 20px;
+      width: 100%;
     }
   }
   .pattern {
     position: absolute;
     background-color: transparent;
-    top: 305px;
-    left: 1012px;
+    top: 336px;
+    right: -6px;
     z-index: 1;
 
     img {
@@ -204,9 +206,9 @@ nav {
     }
   }
   .classes_type {
-    width: 1060px;
+    // width: 1060px;
     display: grid;
-    margin: 40px auto;
+    margin: 40px 65px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
     div {
@@ -220,6 +222,86 @@ nav {
       span {
         @include header-font(25px, $p-f-c, 600, 25px);
         background-color: transparent;
+      }
+    }
+  }
+}
+
+// lessons
+
+.lessons {
+  margin-top: 150px;
+  .lessonsHeader {
+    text-align: center;
+    padding: 0 280px;
+    h6 {
+      @include header-font(45px, $p-f-c, 700, 55px);
+    }
+    p {
+      margin-top: 20px;
+    }
+  }
+  .lessonTab {
+    margin-top: 50px;
+    ul {
+      display: flex;
+      justify-content: center;
+
+      li {
+        button {
+          width: 152px;
+          @include button(60px, 10px, none, transparent, $p-f-c);
+          @include header-font($f1, $p-f-c, 500, 20px);
+        }
+        .active {
+          background-color: $secondary-color;
+          box-shadow: 0px 15px 50px rgba(255, 102, 82, 0.2);
+        }
+      }
+    }
+    div {
+      .tab-item {
+        margin: 45px 0;
+        .tab_items {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-gap: 40px;
+          div {
+            height: 329px;
+            background-color: white;
+            border-radius: 15px;
+            text-align: center;
+            img {
+              background-color: transparent;
+              margin: 20px 0;
+            }
+            h6 {
+              background-color: transparent;
+              @include header-font(25px, $p-f-c, 600, 25px);
+            }
+            p {
+              background-color: transparent;
+              @include header-font($f1, $s-f-c, 400, 30px);
+              margin: 15px;
+            }
+            button {
+              background-color: transparent;
+              margin-top: 10px;
+              @include button(
+                44px,
+                5px,
+                1px solid $primary-color,
+                transparent,
+                $primary-color
+              );
+              width: 162px;
+            }
+            button:hover {
+              background-color: $primary-color;
+              color: white;
+            }
+          }
+        }
       }
     }
   }
