@@ -375,4 +375,94 @@ nav {
 .lessons .lessonTab div .tab-item .tab_items div button:hover {
   background-color: #9c4df4;
   color: white;
+}
+.lessons .moreClass {
+  display: flex;
+  justify-content: center;
+}
+.lessons .moreClass button {
+  width: 202px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  background-color: #9c4df4;
+  color: white;
+}
+
+.register-main {
+  z-index: -2;
+  height: 667px;
+  width: 100%;
+  margin: 120px 0;
+  background-color: #ede9f2;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.register-main div {
+  background-color: transparent;
+}
+.register-main .register-left {
+  margin-left: 70px;
+}
+.register-main .register-left .clg {
+  width: 170px;
+  height: 50px;
+  background-color: #e4e2f4;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 113px;
+  font-size: 20px;
+  color: #9c4df4;
+  font-weight: 500;
+  line-height: 20px;
+}
+.register-main .register-left h6 {
+  background-color: transparent;
+  font-size: 45px;
+  color: #0a033c;
+  font-weight: 700;
+  line-height: 55px;
+  margin-top: 15px;
+}
+.register-main .register-left p {
+  font-size: 16px;
+  color: #5d5a6f;
+  font-weight: 400;
+  line-height: 30px;
+  background-color: transparent;
+  margin: 20px 0;
+}
+.register-main .register-left button {
+  width: 185px;
+  margin-top: 20px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  background-color: #9c4df4;
+  color: white;
+}
+.register-main .register-right {
+  position: relative;
+  z-index: 999;
+}
+.register-main .register-right .right-img img {
+  z-index: 999;
+  background-color: transparent;
+  width: 100%;
+  margin-top: 113px;
+}
+.register-main .register-right .register-back {
+  position: absolute;
+  background-color: transparent;
+  left: 135px;
+  top: 149px;
+  z-index: -1;
+}
+.register-main .register-right .register-back img {
+  background-color: transparent;
+  width: 155px;
 }/*# sourceMappingURL=main.css.map */

@@ -305,4 +305,81 @@ nav {
       }
     }
   }
+  .moreClass {
+    display: flex;
+    justify-content: center;
+    button {
+      width: 202px;
+      @include button(60px, 10px, none, $primary-color, white);
+    }
+  }
+}
+
+// register
+.register-main {
+  z-index: -2;
+  height: 667px;
+  width: 100%;
+  margin: 120px 0;
+  background-color: #ede9f2;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  grid-gap: 20px;
+  div {
+    background-color: transparent;
+  }
+  .register-left {
+    margin-left: 70px;
+    .clg {
+      width: 170px;
+      height: 50px;
+      background-color: #e4e2f4;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 113px;
+      @include header-font($f2, $primary-color, 500, 20px);
+    }
+    h6 {
+      background-color: transparent;
+      @include header-font(45px, $p-f-c, 700, 55px);
+      margin-top: 15px;
+    }
+    p {
+      @include header-font($f1, $s-f-c, 400, 30px);
+      background-color: transparent;
+      margin: 20px 0;
+    }
+    button {
+      width: 185px;
+      margin-top: 20px;
+      @include button(60px, 10px, none, $primary-color, white);
+    }
+  }
+  .register-right {
+    position: relative;
+    z-index: 999;
+    .right-img {
+      img {
+        z-index: 999;
+        background-color: transparent;
+        width: 100%;
+        margin-top: 113px;
+      }
+    }
+    .register-back {
+      position: absolute;
+      background-color: transparent;
+      left: 135px;
+      top: 149px;
+      z-index: -1;
+      img {
+        background-color: transparent;
+        width: 155px;
+      }
+    }
+  }
 }
