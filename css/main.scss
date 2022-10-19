@@ -418,6 +418,7 @@ nav {
   border-radius: 20px;
   margin: 20px 0;
   margin-top: 118px;
+  margin-bottom: 40px;
 
   .subscribe-main {
     background-repeat: no-repeat;
@@ -468,6 +469,63 @@ nav {
           background-color: $primary-color;
           color: white;
         }
+      }
+    }
+  }
+}
+
+// footer
+.footer-main {
+  margin: 40px 0;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
+  grid-gap: 80px;
+  div {
+    .f-logo {
+      img {
+        width: 114px;
+      }
+    }
+    div {
+      display: flex;
+      margin: 10px 0;
+      div {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        margin-right: 20px;
+      }
+      div:hover {
+        background-color: $secondary-color;
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        svg {
+          background-color: transparent;
+
+          path {
+            fill: white;
+          }
+        }
+      }
+    }
+    p {
+      @include header-font($f1, $s-f-c, 400, 20px);
+    }
+  }
+  .links {
+    h6 {
+      @include header-font(22px, $p-f-c, 600, 26px);
+    }
+    ul {
+      margin-top: 20px;
+      padding: 0;
+      li {
+        list-style: none;
+        @include header-font($f1, $s-f-c, 400, 16px);
+        margin-bottom: 20px;
       }
     }
   }

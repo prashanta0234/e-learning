@@ -505,6 +505,7 @@ nav {
   border-radius: 20px;
   margin: 20px 0;
   margin-top: 118px;
+  margin-bottom: 40px;
 }
 .subsribes .subscribe-main {
   background-repeat: no-repeat;
@@ -574,4 +575,62 @@ nav {
   width: 142px;
   background-color: #9c4df4;
   color: white;
+}
+
+.footer-main {
+  margin: 40px 0;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
+  grid-gap: 80px;
+}
+.footer-main div .f-logo img {
+  width: 114px;
+}
+.footer-main div div {
+  display: flex;
+  margin: 10px 0;
+}
+.footer-main div div div {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+}
+.footer-main div div div:hover {
+  background-color: #ff6652;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+}
+.footer-main div div div:hover svg {
+  background-color: transparent;
+}
+.footer-main div div div:hover svg path {
+  fill: white;
+}
+.footer-main div p {
+  font-size: 16px;
+  color: #5d5a6f;
+  font-weight: 400;
+  line-height: 20px;
+}
+.footer-main .links h6 {
+  font-size: 22px;
+  color: #0a033c;
+  font-weight: 600;
+  line-height: 26px;
+}
+.footer-main .links ul {
+  margin-top: 20px;
+  padding: 0;
+}
+.footer-main .links ul li {
+  list-style: none;
+  font-size: 16px;
+  color: #5d5a6f;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */
