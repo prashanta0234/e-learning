@@ -410,3 +410,65 @@ nav {
     }
   }
 }
+
+// subscribe
+.subsribes {
+  height: 420px;
+  background-color: $bg2-color;
+  border-radius: 20px;
+  margin: 20px 0;
+  margin-top: 118px;
+
+  .subscribe-main {
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0 50px;
+    background-image: url(../images/images.png);
+    background-position: center;
+    background-color: transparent;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+
+    div {
+      background-color: transparent;
+
+      h6 {
+        text-align: center;
+        background-color: transparent;
+        margin: 0 236px;
+        @include header-font(45px, white, 700, 55px);
+      }
+
+      p {
+        @include header-font($f1, $s-f-c, 400, 30px);
+        background-color: transparent;
+        text-align: center;
+      }
+      .subs-box {
+        margin: 0 auto;
+        width: 509px;
+        height: 60px;
+        margin-top: 50px;
+        input {
+          width: 367px;
+          background: rgba(255, 255, 255, 0.2);
+          color: white;
+          border: none;
+        }
+        ::placeholder {
+          /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: white;
+          opacity: 1; /* Firefox */
+          font-size: $f1;
+          font-weight: 500;
+        }
+        button {
+          width: 142px;
+          background-color: $primary-color;
+          color: white;
+        }
+      }
+    }
+  }
+}
