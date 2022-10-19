@@ -465,4 +465,36 @@ nav {
 .register-main .register-right .register-back img {
   background-color: transparent;
   width: 155px;
+}
+
+.career-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 80px;
+  margin: 0 95px;
+  margin-bottom: 50px;
+}
+.career-main .career-left img {
+  width: 100%;
+}
+.career-main .career-right h6 {
+  font-size: 45px;
+  color: #0a033c;
+  font-weight: 700;
+  line-height: 55px;
+}
+.career-main .career-right p {
+  font-size: 16px;
+  color: #5d5a6f;
+  font-weight: 400;
+  line-height: 30px;
+}
+.career-main .career-right button {
+  width: 204px;
+  margin: 40px 0;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  background-color: #9c4df4;
+  color: white;
 }/*# sourceMappingURL=main.css.map */

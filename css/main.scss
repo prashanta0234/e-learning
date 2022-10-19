@@ -383,3 +383,30 @@ nav {
     }
   }
 }
+
+// carrer info
+.career-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 80px;
+  margin: 0 95px;
+  margin-bottom: 50px;
+  .career-left {
+    img {
+      width: 100%;
+    }
+  }
+  .career-right {
+    h6 {
+      @include header-font(45px, $p-f-c, 700, 55px);
+    }
+    p {
+      @include header-font($f1, $s-f-c, 400, 30px);
+    }
+    button {
+      width: 204px;
+      margin: 40px 0;
+      @include button(60px, 10px, none, $primary-color, white);
+    }
+  }
+}
