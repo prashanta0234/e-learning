@@ -1,11 +1,13 @@
 @import "./utils/index";
 
+// initial
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   background-color: $bg-color;
 }
+
 .containera {
   @include container;
 }
@@ -15,6 +17,7 @@ a {
   }
 }
 
+// nav section
 .navMain {
   @include navMain;
 }
@@ -39,5 +42,491 @@ nav {
 }
 
 .icon {
-  @include iconClr;
+  @include iconClr($secondary-color);
+}
+.icon1 {
+  @include iconClr($primary-color);
+}
+
+// hero section
+
+.never_stop_learning {
+  width: 15rem;
+  height: 3.125rem;
+  border-radius: 10px;
+  background-color: white;
+  color: $secondary-color;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $f2;
+}
+
+.hero-main {
+  display: flex;
+}
+
+.hero-left {
+  margin-top: 7.875rem;
+}
+.hero-header {
+  @include header-font($f3, $p-f-c, 700, 75px);
+}
+.hero-text {
+  @include header-font($f1, $s-f-c, 400, 30px);
+}
+
+.hero-input {
+  form {
+    input {
+      @include text-input(100%, 3.75rem, 10px, none, white);
+    }
+
+    .drop {
+      position: relative;
+      bottom: 55px;
+      background-color: transparent;
+      display: grid;
+      grid-template-columns: 2fr 1fr 4fr 2fr;
+
+      button {
+        color: $t-f-c;
+        @include header-font($f1, $t-f-c, 500, $f1);
+        svg {
+          background-color: transparent;
+        }
+      }
+      .line {
+        width: 1px;
+        height: 90%;
+        background-color: #dadada;
+        margin: 0 26px;
+      }
+      input {
+        height: auto;
+
+        border-radius: 5px;
+      }
+      input:focus {
+        outline: none !important;
+        border: none;
+      }
+      .search {
+        @include button(50px, 10px, none, $primary-color, white);
+
+        margin-right: 5px;
+        svg {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.right-colam {
+  .hero-right {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+    img {
+      margin-top: 100px;
+      margin-left: 155px;
+      width: 518px;
+      height: 41.813rem;
+    }
+  }
+  .vector1 {
+    @include vactor(668px, 43px);
+  }
+  .vector2 {
+    @include vactor(193px, 133px);
+  }
+  .vector3 {
+    @include vactor(134px, 631px);
+  }
+  .vector4 {
+    @include vactor(457px, 566px);
+  }
+}
+
+// video and audio section
+.video-audio {
+  margin-top: 150px;
+  position: relative;
+
+  .va-head {
+    text-align: center;
+    margin: 0 324px;
+    h6 {
+      @include header-font(45px, $p-f-c, 700, 55px);
+    }
+  }
+  p {
+    @include header-font($f1, $s-f-c, 400, 30px);
+
+    text-align: center;
+    margin: 20px 324px;
+  }
+  .btnn {
+    display: flex;
+    button {
+      @include button(60px, 10px, none, $primary-color, white);
+      width: 162px;
+      margin: 40px auto;
+    }
+  }
+
+  .video {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 65px;
+    img {
+      z-index: 999;
+      border: 30px solid white;
+      border-radius: 20px;
+      width: 100%;
+    }
+  }
+  .pattern {
+    position: absolute;
+    background-color: transparent;
+    top: 336px;
+    right: -6px;
+    z-index: 1;
+
+    img {
+      background-color: transparent;
+    }
+  }
+  .classes_type {
+    // width: 1060px;
+    display: grid;
+    margin: 40px 65px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    div {
+      @include classTypes;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      img {
+        background-color: transparent;
+      }
+      span {
+        @include header-font(25px, $p-f-c, 600, 25px);
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+// lessons
+
+.lessons {
+  margin-top: 150px;
+  .lessonsHeader {
+    text-align: center;
+    padding: 0 280px;
+    h6 {
+      @include header-font(45px, $p-f-c, 700, 55px);
+    }
+    p {
+      margin-top: 20px;
+    }
+  }
+  .lessonTab {
+    margin-top: 50px;
+    ul {
+      display: flex;
+      justify-content: center;
+
+      li {
+        button {
+          width: 152px;
+          @include button(60px, 10px, none, transparent, $p-f-c);
+          @include header-font($f1, $p-f-c, 500, 20px);
+        }
+        .active {
+          background-color: $secondary-color;
+          box-shadow: 0px 15px 50px rgba(255, 102, 82, 0.2);
+        }
+      }
+    }
+    div {
+      .tab-item {
+        margin: 45px 0;
+        .tab_items {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-gap: 40px;
+          div {
+            height: 329px;
+            background-color: white;
+            border-radius: 15px;
+            text-align: center;
+            img {
+              background-color: transparent;
+              margin: 20px 0;
+            }
+            h6 {
+              background-color: transparent;
+              @include header-font(25px, $p-f-c, 600, 25px);
+            }
+            p {
+              background-color: transparent;
+              @include header-font($f1, $s-f-c, 400, 30px);
+              margin: 15px;
+            }
+            button {
+              background-color: transparent;
+              margin-top: 10px;
+              @include button(
+                44px,
+                5px,
+                1px solid $primary-color,
+                transparent,
+                $primary-color
+              );
+              width: 162px;
+            }
+            button:hover {
+              background-color: $primary-color;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  .moreClass {
+    display: flex;
+    justify-content: center;
+    button {
+      width: 202px;
+      @include button(60px, 10px, none, $primary-color, white);
+    }
+  }
+}
+
+// register
+.register-main {
+  z-index: -2;
+  height: 667px;
+  width: 100%;
+  margin: 120px 0;
+  background-color: #ede9f2;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  grid-gap: 20px;
+  div {
+    background-color: transparent;
+  }
+  .register-left {
+    margin-left: 70px;
+    .clg {
+      width: 170px;
+      height: 50px;
+      background-color: #e4e2f4;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 113px;
+      @include header-font($f2, $primary-color, 500, 20px);
+    }
+    h6 {
+      background-color: transparent;
+      @include header-font(45px, $p-f-c, 700, 55px);
+      margin-top: 15px;
+    }
+    p {
+      @include header-font($f1, $s-f-c, 400, 30px);
+      background-color: transparent;
+      margin: 20px 0;
+    }
+    button {
+      width: 185px;
+      margin-top: 20px;
+      @include button(60px, 10px, none, $primary-color, white);
+    }
+  }
+  .register-right {
+    position: relative;
+    z-index: 999;
+    .right-img {
+      img {
+        z-index: 999;
+        background-color: transparent;
+        width: 100%;
+        margin-top: 113px;
+      }
+    }
+    .register-back {
+      position: absolute;
+      background-color: transparent;
+      left: 135px;
+      top: 149px;
+      z-index: -1;
+      img {
+        background-color: transparent;
+        width: 155px;
+      }
+    }
+  }
+}
+
+// carrer info
+.career-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 80px;
+  margin: 0 95px;
+  margin-bottom: 50px;
+  .career-left {
+    img {
+      width: 100%;
+    }
+  }
+  .career-right {
+    h6 {
+      @include header-font(45px, $p-f-c, 700, 55px);
+    }
+    p {
+      @include header-font($f1, $s-f-c, 400, 30px);
+    }
+    button {
+      width: 204px;
+      margin: 40px 0;
+      @include button(60px, 10px, none, $primary-color, white);
+    }
+  }
+}
+
+// subscribe
+.subsribes {
+  height: 420px;
+  background-color: $bg2-color;
+  border-radius: 20px;
+  margin: 20px 0;
+  margin-top: 118px;
+  margin-bottom: 40px;
+
+  .subscribe-main {
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0 50px;
+    background-image: url(../images/images.png);
+    background-position: center;
+    background-color: transparent;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+
+    div {
+      background-color: transparent;
+
+      h6 {
+        text-align: center;
+        background-color: transparent;
+        margin: 0 236px;
+        @include header-font(45px, white, 700, 55px);
+      }
+
+      p {
+        @include header-font($f1, $s-f-c, 400, 30px);
+        background-color: transparent;
+        text-align: center;
+      }
+      .subs-box {
+        margin: 0 auto;
+        width: 509px;
+        height: 60px;
+        margin-top: 50px;
+        input {
+          width: 367px;
+          background: rgba(255, 255, 255, 0.2);
+          color: white;
+          border: none;
+        }
+        ::placeholder {
+          /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: white;
+          opacity: 1; /* Firefox */
+          font-size: $f1;
+          font-weight: 500;
+        }
+        button {
+          width: 142px;
+          background-color: $primary-color;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// footer
+.footer-main {
+  margin: 40px 0;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
+  grid-gap: 80px;
+  div {
+    .f-logo {
+      img {
+        width: 114px;
+      }
+    }
+    div {
+      display: flex;
+      margin: 10px 0;
+      div {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        margin-right: 20px;
+      }
+      div:hover {
+        background-color: $secondary-color;
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        svg {
+          background-color: transparent;
+
+          path {
+            fill: white;
+          }
+        }
+      }
+    }
+    p {
+      @include header-font($f1, $s-f-c, 400, 20px);
+    }
+  }
+  .links {
+    h6 {
+      @include header-font(22px, $p-f-c, 600, 26px);
+    }
+    ul {
+      margin-top: 20px;
+      padding: 0;
+      li {
+        list-style: none;
+        @include header-font($f1, $s-f-c, 400, 16px);
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
